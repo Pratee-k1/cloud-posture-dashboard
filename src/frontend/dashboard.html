@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cloud Posture Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+<h1>Cloud Posture Dashboard</h1>
+
+<label>Severity:</label>
+<select id="severity">
+  <option value="">All</option>
+  <option value="CRITICAL">Critical</option>
+  <option value="HIGH">High</option>
+</select>
+
+<button onclick="loadData()">Filter</button>
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>Cloud</th>
+      <th>Resource</th>
+      <th>Rule</th>
+      <th>Severity</th>
+    </tr>
+  </thead>
+  <tbody id="tableBody"></tbody>
+</table>
+
+<script src="dashboard.js"></script>
+</body>
+</html>
